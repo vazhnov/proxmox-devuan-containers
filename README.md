@@ -15,14 +15,16 @@ Download the [ready-to-use template](https://github.com/siddolo/pve-devuan-appli
 ### Build Devuan template using DAB (Debian Appliance Builder)
 
 ```shell
-cd devuan-1.0-standard-64
-make
+cd devuan-3.0-standard-64
+sudo make
 ```
 
+Rename file before move into template directory.
 Then move the tar.gz into proxmox template directory, for example:
 
 ```shell
-mv debian-8.0-devuan-1.0-standard_1.0_amd64.tar.gz /rpool/template/cache/devuan-1.0-standard_1.0_amd64.tar.gz
+mv debian-10.0-devuan-3.0-standard_1.2_amd64.tar.gz devuan-3.0-standard_1.2_amd64.tar.gz
+sudo mv devuan-3.0-standard_1.2_amd64.tar.gz /var/lib/vz/template/cache/
 ```
 
 ## References
