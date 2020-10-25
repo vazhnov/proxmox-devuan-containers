@@ -44,6 +44,7 @@ sudo make clean
 
 ## References
 
-* https://pve.proxmox.com/wiki/Debian_Appliance_Builder
-* https://bugzilla.proxmox.com/show_bug.cgi?id=1668
-* https://git.proxmox.com/?p=dab-pve-appliances.git;a=blob;f=devuan-1.0-standard-64/dab.conf;h=b2c2ef7f046387beaf41215bd84c7c938fc25e6c;hb=HEAD
+* https://pve.proxmox.com/wiki/Debian\_Appliance\_Builder — how to build your own application appliances
+* [Support for Devuan LXC container](https://bugzilla.proxmox.com/show_bug.cgi?id=1668) — original bugreport from Pasquale Fiorillo to support Devuan 1.0
+* [Support for LXC containers Devuan 2, 3 (and maybe 4)](https://bugzilla.proxmox.com/show_bug.cgi?id=3096) — next bugreport, to support fresh Devuan images
+* [dab-pve-appliances](https://git.proxmox.com/?p=dab-pve-appliances.git;a=tree) — git repository with current DAB templates
