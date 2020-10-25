@@ -2,9 +2,15 @@
 
 Devuan Virtual Appliances for Proxmox (LXC containers).
 
-## Update
+## Supporting versions
 
-Proxmox will official support Devuan starting from PVE 5.1 (see: [Support for Devuan LXC container](https://bugzilla.proxmox.com/show_bug.cgi?id=1668)).
+Proxmox supports Devuan starting from PVE 5.1 (see: [Support for Devuan LXC container](https://bugzilla.proxmox.com/show_bug.cgi?id=1668)).
+
+* Devuan 1 Jessie (based on Debian 8)
+* Devuan 2.1 ASCII (based on Debian 9 Stretch / 2017-06)
+* Devuan 3 Beowulf (based on Debian 10 Buster / 2019-07)
+
+See git repository [dab-pve-appliances](https://git.proxmox.com/?p=dab-pve-appliances.git;a=tree) for current DAB templates.
 
 ## Usage
 
@@ -19,12 +25,21 @@ cd devuan-3.0-standard-64
 sudo make
 ```
 
-Rename file before move into template directory.
+**Rename** file **before** moving into template directory.
+
+```shell
+mv 'debian-10.0-devuan-3.0-standard_1.2_amd64.tar.gz' 'devuan-3.0-standard_1.2_amd64.tar.gz'
+```
 Then move the tar.gz into proxmox template directory, for example:
 
 ```shell
-mv debian-10.0-devuan-3.0-standard_1.2_amd64.tar.gz devuan-3.0-standard_1.2_amd64.tar.gz
-sudo mv devuan-3.0-standard_1.2_amd64.tar.gz /var/lib/vz/template/cache/
+sudo mv 'devuan-3.0-standard_1.2_amd64.tar.gz' '/var/lib/vz/template/cache/'
+```
+
+Then do some cleanup:
+
+```shell
+sudo make clean
 ```
 
 ## References
