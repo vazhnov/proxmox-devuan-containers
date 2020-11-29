@@ -3,7 +3,6 @@ BASEDIR:=$(shell dab basedir)
 all: info/init_ok
 	dab bootstrap --minimal
 	dab install devuan-keyring
-	dab exec bash -c "echo 10.0 > /etc/debian_version"
 	dab finalize
 
 info/init_ok: dab.conf
