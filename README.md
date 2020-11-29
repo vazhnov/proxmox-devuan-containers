@@ -7,9 +7,6 @@ Devuan Virtual Appliances for [Proxmox Virtual Environment](https://proxmox.com/
 Proxmox supports Devuan starting from Proxmox VE v5.1 (released 24.10.2017).
 
 * Devuan 1 Jessie (based on Debian 8)
-
-With workaround, it supports newer Devuan versions:
-
 * Devuan 2.1 ASCII (based on Debian 9 Stretch / 2017-06)
 * Devuan 3 Beowulf (based on Debian 10 Buster / 2019-07)
 * Devuan 4 Chimaera (based on Debian testing 11 Bullseye, TBD in 2021)
@@ -17,10 +14,6 @@ With workaround, it supports newer Devuan versions:
 See git repository [dab-pve-appliances](https://git.proxmox.com/?p=dab-pve-appliances.git;a=tree) for current DAB templates.
 
 ## Usage
-
-### Use ready-to-use template
-
-Download the [ready-to-use template](https://github.com/siddolo/pve-devuan-appliances/releases) and upload it into Proxmox using the web interface or copy it into Proxmox template directory (for example `/rpool/template/cache/` or `/var/lib/vz/template/cache`).
 
 ### Build Devuan template using DAB (Debian Appliance Builder)
 
