@@ -9,7 +9,7 @@ Proxmox supports Devuan starting from Proxmox VE v5.1 (released 24.10.2017).
 * Devuan 1 Jessie (based on Debian 8)
 * Devuan 2.1 ASCII (based on Debian 9 Stretch / 2017-06)
 * Devuan 3 Beowulf (based on Debian 10 Buster / 2019-07)
-* Devuan 4 Chimaera (based on Debian testing 11 Bullseye, TBD in 2021)
+* Devuan 4 Chimaera (based on Debian 11 Bullseye / 2021-11)
 
 See git repository [dab-pve-appliances](https://git.proxmox.com/?p=dab-pve-appliances.git;a=tree) for current DAB templates.
 
@@ -18,19 +18,19 @@ See git repository [dab-pve-appliances](https://git.proxmox.com/?p=dab-pve-appli
 ### Build Devuan template using DAB (Debian Appliance Builder)
 
 ```shell
-cd devuan-3.0-standard-64
+cd devuan-4.0-minimal-64
 sudo make
 ```
 
 **Rename** file **before** moving into template directory.
 
 ```shell
-mv 'debian-10.0-devuan-3.0-standard_1.2_amd64.tar.gz' 'devuan-3.0-standard_1.2_amd64.tar.gz'
+mv -v 'debian-11-devuan-4.0-minimal_1.0_amd64.tar.gz' "devuan-4.0-minimal_$(date +%F)_amd64.tar.gz"
 ```
 Then move the tar.gz into proxmox template directory, for example:
 
 ```shell
-sudo mv 'devuan-3.0-standard_1.2_amd64.tar.gz' '/var/lib/vz/template/cache/'
+sudo mv -v -- devuan-4.0-minimal_*_amd64.tar.gz '/var/lib/vz/template/cache/'
 ```
 
 Then do some cleanup:
