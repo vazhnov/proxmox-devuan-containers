@@ -15,7 +15,15 @@ See git repository [dab-pve-appliances](https://git.proxmox.com/?p=dab-pve-appli
 
 ## Usage
 
-### Build Devuan template using DAB (Debian Appliance Builder)
+### Preparation
+
+Install `dab` (Debian appliance builder) tool:
+
+```sh
+sudo apt install dab
+```
+
+### Build Devuan template
 
 ```shell
 cd devuan-4.0-minimal-64
