@@ -23,6 +23,23 @@ Install `dab` ([Debian appliance builder](https://pve.proxmox.com/wiki/Debian_Ap
 sudo apt install dab
 ```
 
+#### Support for Devuan testing
+
+Manually edit `/usr/share/perl5/PVE/LXC/Setup/Devuan.pm`:
+
+```diff
+--- /usr/share/perl5/PVE/LXC/Setup/Devuan.pm.ORIG	2022-05-04 08:36:45.000000000 +0200
++++ /usr/share/perl5/PVE/LXC/Setup/Devuan.pm	2022-06-19 21:36:59.039446517 +0200
+@@ -25,6 +25,8 @@
+ 	'beowulf/ceres' => 10,
+ 	'chimaera' => 11, # Devuan 4.0
+ 	'chimaera/ceres' => 11,
++	'daedalus' => 12, # Devuan 5.0
++	'daedalus/ceres' => 12,
+     };
+     die "unsupported Devuan version '$version'\n" if !exists($version_map->{$version});
+```
+
 ### Build Devuan template
 
 Example:
