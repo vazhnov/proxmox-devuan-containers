@@ -17,7 +17,7 @@ See git repository [dab-pve-appliances](https://git.proxmox.com/?p=dab-pve-appli
 
 ### Preparation
 
-Install `dab` (Debian appliance builder) tool:
+Install `dab` ([Debian appliance builder](https://pve.proxmox.com/wiki/Debian_Appliance_Builder)) tool:
 
 ```sh
 sudo apt install dab
@@ -25,12 +25,15 @@ sudo apt install dab
 
 ### Build Devuan template
 
+Example:
+
 ```shell
+git clone 'https://github.com/vazhnov/proxmox-devuan-containers.git'
 cd devuan-4.0-minimal-64
 sudo make
 ```
 
-**Rename** file **before** moving into template directory.
+Rename file **before** moving into template directory:
 
 ```shell
 mv -v 'debian-11-devuan-4.0-minimal_1.0_amd64.tar.gz' "devuan-4.0-minimal_$(date +%F)_amd64.tar.gz"
@@ -38,7 +41,7 @@ mv -v 'debian-11-devuan-4.0-minimal_1.0_amd64.tar.gz' "devuan-4.0-minimal_$(date
 Then move the tar.gz into proxmox template directory, for example:
 
 ```shell
-sudo mv -v -- devuan-4.0-minimal_*_amd64.tar.gz '/var/lib/vz/template/cache/'
+sudo mv -v -- devuan-*_amd64.tar.gz '/var/lib/vz/template/cache/'
 ```
 
 Then do some cleanup:
