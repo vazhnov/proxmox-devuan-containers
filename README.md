@@ -74,6 +74,7 @@ sudo make clean
 * [dab-pve-appliances](https://git.proxmox.com/?p=dab-pve-appliances.git;a=tree) — git repository with current DAB templates;
 * https://gitlab.com/vazhnov/proxmox-devuan-containers — this repository at GitHub;
 * https://github.com/vazhnov/proxmox-devuan-containers — this repository at GitLab;
+* https://github.com/siddolo/pve-devuan-appliances — original repository;
 
 ### Documentation
 
