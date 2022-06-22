@@ -53,7 +53,7 @@ sudo make
 Rename file **before** moving into template directory:
 
 ```shell
-mv -v 'debian-11-devuan-4.0-minimal_1.0_amd64.tar.gz' "devuan-4.0-minimal_$(date +%F)_amd64.tar.gz"
+mv -v 'devuan-4.0-minimal_1.0_amd64.tar.gz' "devuan-4.0-minimal_$(date +%F)_amd64.tar.gz"
 ```
 Then move the tar.gz into proxmox template directory, for example:
 
@@ -69,8 +69,18 @@ sudo make clean
 
 ## References
 
+### Sources
+
+* [dab-pve-appliances](https://git.proxmox.com/?p=dab-pve-appliances.git;a=tree) — git repository with current DAB templates;
+* https://gitlab.com/vazhnov/proxmox-devuan-containers — this repository at GitHub;
+* https://github.com/vazhnov/proxmox-devuan-containers — this repository at GitLab;
+
+### Documentation
+
 * https://pve.proxmox.com/wiki/Debian_Appliance_Builder — how to build your own application appliances;
+
+### Proxmox bugzilla requests
+
 * [Support for Devuan LXC container](https://bugzilla.proxmox.com/show_bug.cgi?id=1668) — original bugreport from Pasquale Fiorillo to support Devuan 1.0;
 * [Support for LXC containers Devuan 2, 3 (and maybe 4)](https://bugzilla.proxmox.com/show_bug.cgi?id=3096) — support Devuan 2, 3, 4;
 * [Support for LXC containers Devuan 5](https://bugzilla.proxmox.com/show_bug.cgi?id=4007) — next bugreport to support upcoming Devuan 5;
-* [dab-pve-appliances](https://git.proxmox.com/?p=dab-pve-appliances.git;a=tree) — git repository with current DAB templates;
