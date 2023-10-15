@@ -85,3 +85,8 @@ sudo make clean
 * [Support for Devuan LXC container](https://bugzilla.proxmox.com/show_bug.cgi?id=1668) — original bugreport from Pasquale Fiorillo to support Devuan 1.0;
 * [Support for LXC containers Devuan 2, 3 (and maybe 4)](https://bugzilla.proxmox.com/show_bug.cgi?id=3096) — support Devuan 2, 3, 4;
 * [Support for LXC containers Devuan 5](https://bugzilla.proxmox.com/show_bug.cgi?id=4007) — next bugreport to support upcoming Devuan 5;
+
+### See also
+
+* https://gitea.devuan.org/devuan/lxc-templates — archived. Last update was in 2020.
+* https://github.com/gregoryolsen/lxc-devuan — too old: last update was in 2016.
