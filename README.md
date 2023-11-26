@@ -90,3 +90,4 @@ sudo make clean
 
 * https://gitea.devuan.org/devuan/lxc-templates — archived. Last update was in 2020.
 * https://github.com/gregoryolsen/lxc-devuan — too old: last update was in 2016.
+* https://gitlab.com/vazhnov/devuan-debootstrap-grub-efi — install Devuan with `debootstrap`, configure EFI.
