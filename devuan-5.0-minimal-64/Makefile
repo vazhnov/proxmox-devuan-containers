@@ -3,6 +3,7 @@ BASEDIR:=$(shell dab basedir)
 all: info/init_ok
 	dab bootstrap --minimal
 	dab install devuan-keyring
+	dab exec apt-get -y -V purge x11-apps x11-common x11-session-utils x11-utils x11-xkb-utils x11-xserver-utils libgl1-mesa-dri libglapi-mesa libglx-mesa0 libllvm7
 	dab finalize
 
 info/init_ok: dab.conf
